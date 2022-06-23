@@ -8,7 +8,7 @@
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        11.6.124
+Version:        11.7.50
 Release:        1%{?dist}
 Summary:        Utility to extract information from CUDA binary files
 License:        CUDA Toolkit
@@ -49,6 +49,9 @@ install -m 0755 -p -D bin/cuobjdump %{buildroot}%{_bindir}/cuobjdump
 %{_bindir}/cuobjdump
 
 %changelog
+* Thu Jun 23 2022 Simone Caronni <negativo17@gmail.com> - 1:11.7.50-1
+- Update to 11.7.50.
+
 * Thu Mar 31 2022 Simone Caronni <negativo17@gmail.com> - 1:11.6.124-1
 - Update to 11.6.124 (CUDA 11.6.2).
 
